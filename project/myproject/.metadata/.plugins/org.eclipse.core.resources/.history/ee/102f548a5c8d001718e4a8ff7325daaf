@@ -1,0 +1,7 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+
+
+public class CartItemDaoImpl implements CartItemDao{
+
+}

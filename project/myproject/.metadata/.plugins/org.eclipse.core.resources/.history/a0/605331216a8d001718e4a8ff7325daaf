@@ -1,0 +1,6 @@
+package com.niit.ShopWatchBackEnd.dao;
+
+
+
+public interface CartItemDao {
+}

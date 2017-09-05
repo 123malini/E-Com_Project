@@ -1,0 +1,21 @@
+package com.niit.TestCase;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.ShopWatchBackEnd.dao.CartItemDao;
+
+public class CartItemTestCase {
+@Autowired
+static AnnotationConfigApplicationContext context;
+@Autowired
+static CartItemDao cart1;
+@BeforeClass
+public static void int(){
+	context= new AnnotationConfigApplicationContext();
+	context.scan("com");
+	context.refresh();
+	cart1=(CartItemDao)context.getBean("cart1");
+}
+
+}

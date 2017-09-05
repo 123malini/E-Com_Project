@@ -1,0 +1,7 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import com.niit.ShopWatchBackEnd.model.Supplier;
+
+public class SupplierDaoImpl extends Supplier {
+
+}

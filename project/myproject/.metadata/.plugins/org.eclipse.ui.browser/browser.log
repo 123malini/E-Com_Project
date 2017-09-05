@@ -1,0 +1,52 @@
+
+Aug 16, 2017 04:06:21.87 NEW SESSION
+Aug 16, 2017 04:06:21.87 [2684:1340:0816/040621.872:ERROR:socket_stream.cc(210)] Closing stream with result -101
+
+Aug 21, 2017 12:48:44.97 NEW SESSION
+Aug 21, 2017 12:48:44.97 [7076:5472:0821/124844.948:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 12:49:01.43 [7076:5472:0821/124901.435:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 12:49:28.75 [7076:5472:0821/124928.754:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 12:50:17.52 [7076:5472:0821/125017.524:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 12:52:12.13 [7076:5472:0821/125212.133:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 12:55:37.10 [7076:5472:0821/125537.108:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:01:05.92 [7076:5472:0821/130105.927:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:11:05.93 [7076:5472:0821/131105.931:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:21:05.94 [7076:5472:0821/132105.941:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:26:55.65 [7076:3684:0821/132655.657:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:27:21.34 [7076:3684:0821/132721.344:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:28:07.68 [7076:3684:0821/132807.688:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:29:45.75 [7076:3684:0821/132945.759:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:31:05.95 [7076:5472:0821/133105.957:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:33:25.93 [7076:3684:0821/133325.937:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:40:37.84 [7076:3684:0821/134037.839:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:41:05.96 [7076:5472:0821/134105.963:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 13:50:37.85 [7076:3684:0821/135037.854:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 13:51:05.97 [7076:5472:0821/135105.973:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 14:00:37.87 [7076:3684:0821/140037.869:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 14:01:05.97 [7076:5472:0821/140105.978:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 21, 2017 14:10:37.87 [7076:3684:0821/141037.877:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+Aug 21, 2017 14:11:05.99 [7076:5472:0821/141105.995:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+
+Aug 21, 2017 14:33:01.01 NEW SESSION
+Aug 21, 2017 14:33:01.01 [1620:2732:0821/143301.010:ERROR:backend_impl.cc(1021)] Critical error found -8
+Aug 21, 2017 14:33:01.04 [1620:2732:0821/143301.010:ERROR:backend_impl.cc(1021)] Critical error found -8
+Aug 21, 2017 14:33:01.06 [1620:2732:0821/143301.010:ERROR:entry_impl.cc(1037)] No file for a001627d
+Aug 21, 2017 14:33:02.16 [1620:2732:0821/143302.167:ERROR:backend_impl.cc(1021)] Critical error found -8
+Aug 21, 2017 14:53:16.35 [1620:4480:0821/145316.357:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:53:17.79 [1620:4480:0821/145317.790:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:54:00.59 [1620:4480:0821/145400.595:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:56:31.59 [1620:4480:0821/145631.596:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:57:49.41 [1620:4480:0821/145749.413:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:57:49.85 [1620:4480:0821/145749.849:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 14:58:01.88 [1620:4480:0821/145801.887:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 15:00:49.20 [1620:4480:0821/150049.208:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 21, 2017 15:22:22.16 [1620:4480:0821/152222.163:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+Aug 28, 2017 14:48:02.02 NEW SESSION
+Aug 28, 2017 14:48:02.02 [4092:8900:0828/144801.972:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 14:48:27.28 [4092:8900:0828/144827.284:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 14:49:21.59 [4092:8900:0828/144921.593:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 14:51:12.08 [4092:8900:0828/145112.080:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 14:53:59.21 [4092:8900:0828/145359.210:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 15:00:26.75 [4092:8900:0828/150026.757:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2017 15:02:55.56 [4092:8900:0828/150255.567:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21

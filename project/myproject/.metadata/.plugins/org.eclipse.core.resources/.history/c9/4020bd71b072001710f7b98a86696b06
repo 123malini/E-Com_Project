@@ -1,0 +1,13 @@
+package com.niit.ShopWatchBackEnd.model;
+
+public class User {
+	@Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int userId;
+    private String userName;
+    @Column(unique=true)
+    private String emailId;
+    private String contactNo;
+    private String role;
+    private String password;
+}

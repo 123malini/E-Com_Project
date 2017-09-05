@@ -1,0 +1,26 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.User;
+
+@Repository("userDao")
+@Transactional
+public class UserDaoImpl implements UserDao {
+
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public List<User> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package com.niit.ShopWatchBackEnd.dao;
+
+public class ProductDao {
+	public void insert() {
+	}
+//	public void update() {
+//	}
+//	public void delete() {
+	}
+	

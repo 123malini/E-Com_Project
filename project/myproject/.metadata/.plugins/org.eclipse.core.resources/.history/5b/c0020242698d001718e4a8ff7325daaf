@@ -1,0 +1,55 @@
+package com.niit.ShopWatchBackEnd.model;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
+@Entity
+
+public class CartItem {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+private int Id;
+	@OneToOne(fetch=FetchType.EAGER)
+private  Product product;
+private int orderquantity;
+private float price;
+@ManyToOne(fetch=FetchType.EAGER)
+private Cart cart;
+public int getId() {
+	return Id;
+}
+public void setId(int id) {
+	Id = id;
+}
+public Product getProduct() {
+	return product;
+}
+public void setProduct(Product product) {
+	this.product = product;
+}
+public int getOrderquantity() {
+	return orderquantity;
+}
+public void setOrderquantity(int orderquantity) {
+	this.orderquantity = orderquantity;
+}
+public float getPrice() {
+	return price;
+}
+public void setPrice(float price) {
+	this.price = price;
+}
+public Cart getCart() {
+	return cart;
+}
+public void setCart(Cart cart) {
+	this.cart = cart;
+}
+
+}

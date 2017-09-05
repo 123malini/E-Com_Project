@@ -1,0 +1,10 @@
+127.0.0.1 - - [30/Aug/2017:16:34:56 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/ HTTP/1.1" 200 11485
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/h.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 67469
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/h1.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 274187
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/h2.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 132027
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/a3.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 6746
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/a.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 5743
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/a2.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 10640
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:03 +0530] "GET /ShopWatch/resource/images/a1.jpg;jsessionid=5164D5E4E613275160756F49A370A326 HTTP/1.1" 200 7309
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:16:35:04 +0530] "GET /favicon.ico HTTP/1.1" 404 1016

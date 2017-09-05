@@ -1,0 +1,16 @@
+package com.niit.ShopWatchBackEnd.dao;
+
+import java.util.List;
+
+import com.niit.ShopWatchBackEnd.model.Cart;
+import com.niit.ShopWatchBackEnd.model.CartItem;
+
+;
+
+public interface CartItemDao {
+	boolean insertProduct(CartItem cart); 
+	Cart getbyId(int id);
+	boolean updateCart(CartItem cartitemupdate);
+    boolean deleteCart(CartItem cartitemdelete);
+	 List<CartItem> getAll();
+}

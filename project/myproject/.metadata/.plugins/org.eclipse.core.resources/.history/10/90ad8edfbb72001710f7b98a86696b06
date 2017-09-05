@@ -1,0 +1,41 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.User;
+
+@Repository("userDao")
+@Transactional
+public class UserDaoImpl implements UserDao {
+	
+	@Autowired
+	SessionFactory sessionFactory;
+
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		System.out.println("Calling insert user method");
+		try{
+			System.out.println("First Try");
+			sessionFactory.getCurrentSession().save(user);
+			System.out.println("Last Try");
+			return true;
+		}catch(Exception e){
+			e.printStackTrace();
+		return false;
+		}
+	}
+
+	public List<User> getAll() {
+		
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

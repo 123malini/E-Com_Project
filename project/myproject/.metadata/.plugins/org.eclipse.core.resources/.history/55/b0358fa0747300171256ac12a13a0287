@@ -1,0 +1,11 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.niit.ShopWatchBackEnd.model.Supplier;
+@Repository
+@Transactional
+public class SupplierDaoImpl extends Supplier {
+
+}

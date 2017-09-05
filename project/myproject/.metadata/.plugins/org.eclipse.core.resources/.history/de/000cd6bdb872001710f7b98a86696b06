@@ -1,0 +1,28 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import com.niit.ShopWatchBackEnd.dao.ProductDao;
+import com.niit.ShopWatchBackEnd.model.Product;
+
+public class ProductDaoImpl implements ProductDao{
+
+	public boolean insertProduct(Product product) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Product getbyId(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean updateProduct(Product productupdate) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteProduct(Product productdelete) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

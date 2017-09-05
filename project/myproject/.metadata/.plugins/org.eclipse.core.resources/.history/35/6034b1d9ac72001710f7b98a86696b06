@@ -1,0 +1,89 @@
+package com.niit.TestCase;
+
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.ShopWatchBackEnd.dao.ProductDao;
+import com.niit.ShopWatchBackEnd.model.Product;
+
+public class ProductTestCase {
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+	@Autowired
+	static ProductDao product1;
+
+	@BeforeClass
+	public static void init() {
+		try {
+			System.out.println("Inside init");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			context = new AnnotationConfigApplicationContext();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			context.scan("com");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			context.refresh();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			product1 = (ProductDao) context.getBean("product1");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			System.out.println("about to exit init");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void createProduct() {
+		try {
+			System.out.println("Inside create product method");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			Product product = new Product();
+			product.setProdName("DDDD");
+			product.setBrandName("InfoSys");
+			product.setPrice(10000);
+			product.setProdDesc("Office Prof");
+			product.setProductImage("12.jpg"); // Assert.assertEquals(true,
+			product1.insertProduct(product);
+			Assert.assertEquals(true, product1.insertProduct(product));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/*
+	 * @Test public void updateProduct() { try{ System.out.println(
+	 * "Inside updateproduct method"); }catch(Exception e){ e.printStackTrace();
+	 * } try { Product p = product1.getbyId(1); p.setProdName("bbbb");
+	 * p.setBrandName("abcdf"); p.setProdDesc("home");
+	 * p.setProductImage("abcd"); p.setPrice(500); p.setProductImage("49.jpg");
+	 * Assert.assertEquals(true, product1.updateProduct(p)); } catch (Exception
+	 * e) { e.printStackTrace(); } }
+	 */
+
+	/*
+	 * @Test public void deleteProduct() { Product p = product1.getbyId(3);
+	 * Assert.assertEquals(true, product1.deleteProduct(p)); }
+	 */
+
+}
+

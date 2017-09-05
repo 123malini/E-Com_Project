@@ -1,0 +1,23 @@
+<beansxmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<beanid="HandlerMapping"class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+<beanname="/welcome.html"class="com.niit.ecomm.controller.HomeController"/>
+
+<beanid="viewResolver"class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<propertyname="prefix">
+<value>/WEB-INF/view/</value>
+</property>
+<propertyname="suffix">
+<value>.jsp</value>
+</property>
+
+</bean>
+
+
+
+</beans>

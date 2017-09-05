@@ -1,0 +1,8 @@
+package com.niit.ShopWatchBackEnd.dao;
+
+public interface UserDao {
+	 boolean insertUser(User user);
+     
+     List<User> getAll();
+    
+}

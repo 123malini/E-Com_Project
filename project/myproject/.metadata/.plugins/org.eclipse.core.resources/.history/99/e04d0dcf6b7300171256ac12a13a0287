@@ -1,0 +1,22 @@
+package com.niit.ShopWatchBackEnd.daoimpl;
+
+import java.util.List;
+
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.User;
+
+public class UserDaoImpl implements UserDao {
+
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public List<User> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package com.niit.ShopWatchBackEnd.model;
+
+public class CartItem {
+private int Id;
+private  Product product;
+
+}

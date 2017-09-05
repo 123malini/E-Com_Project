@@ -1,0 +1,49 @@
+package com.niit.ShopWatch.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.ShopWatchBackEnd.dao.CartDao;
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.Cart;
+import com.niit.ShopWatchBackEnd.model.User;
+
+@Controller
+public class UserController {
+	@Autowired
+	UserDao userdao;
+	@Autowired
+	CartDao cartdao;
+@RequestMapping("/login1")
+public ModelAndView login(){
+ModelAndView mv=new ModelAndView("login");	
+return mv;
+}
+@RequestMapping("/register")
+public ModelAndView reg(){
+ModelAndView mv=new ModelAndView("registerpage");
+mv.addObject("registration", new User());
+return mv;
+}
+@PostMapping("/usersubmit")
+public String submit(@ModelAttribute("registration") User user, ModelMap model){
+	Cart cart=new Cart();
+	if (userdao.insertUser(user) ) {
+		cart.setUser(user);
+		cartdao.insertItem(cart);
+		}
+	return "redirect:/login1";
+}
+
+@RequestMapping("/pro1")
+public ModelAndView pro(){
+	
+}
+
+}
+

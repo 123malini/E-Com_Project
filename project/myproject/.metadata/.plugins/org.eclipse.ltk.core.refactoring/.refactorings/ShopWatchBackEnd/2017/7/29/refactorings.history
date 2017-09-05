@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ShopWatchBackEnd/src/main/java/com/niit/ShopWatchBackEnd/model/ModelClass.java&apos; to &apos;Product.java&apos;" description="Rename resource &apos;ModelClass.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/niit/ShopWatchBackEnd/model/ModelClass.java" name="Product.java" stamp="1500553742981" updateReferences="true"/>
+</session>

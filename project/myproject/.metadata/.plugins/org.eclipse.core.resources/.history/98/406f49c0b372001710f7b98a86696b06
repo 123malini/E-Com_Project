@@ -1,0 +1,47 @@
+package com.niit.TestCase;
+
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.User;
+
+public class UserTestCase {
+	@Autowired
+    static AnnotationConfigApplicationContext context;
+    @Autowired
+    static UserDao userDao;
+   
+    @BeforeClass
+    public static void init() {
+          System.out.println("Init user is called");
+          context = new AnnotationConfigApplicationContext();
+          context.scan("com");
+          context.refresh();
+          userDao=(UserDao)context.getBean("userDao");   
+    }
+   
+    @Test
+    public void createUser()
+    {
+          System.out.println("create user is called");
+          User user=new User();
+          user.setEmailId("@abc");
+          user.setRole("098765");
+          user.setPassword("......");
+          user.setUserName("roychowdhury");
+          
+          
+          Assert.assertEquals(true,userDao.insertUser(user));
+          System.out.println("User inserted successfully");
+    }
+    /*@Test
+    public void listAll()
+    {
+          Assert.assertEquals(1,userDao.getAll().size());
+    }*/
+   
+}

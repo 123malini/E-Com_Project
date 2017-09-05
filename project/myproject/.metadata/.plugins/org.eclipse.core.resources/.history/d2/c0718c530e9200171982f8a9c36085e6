@@ -1,0 +1,107 @@
+package com.niit.TestCase;
+
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.ShopWatchBackEnd.dao.CartDao;
+import com.niit.ShopWatchBackEnd.dao.CartItemDao;
+import com.niit.ShopWatchBackEnd.dao.ProductDao;
+import com.niit.ShopWatchBackEnd.dao.UserDao;
+import com.niit.ShopWatchBackEnd.model.Cart;
+import com.niit.ShopWatchBackEnd.model.CartItem;
+import com.niit.ShopWatchBackEnd.model.Product;
+import com.niit.ShopWatchBackEnd.model.User;
+
+public class CartItemTestCase {
+@Autowired
+static AnnotationConfigApplicationContext context;
+@Autowired
+static CartItemDao cart1;
+@Autowired
+ static UserDao user1;
+@Autowired
+ static ProductDao pro1;
+@Autowired
+static CartDao cartdao;
+ 
+	@BeforeClass
+	public static void init() {
+		System.out.println("Problem Occuring ");
+		context = new AnnotationConfigApplicationContext();
+		System.out.println("Problem Occuring 1 ");
+		context.scan("com");
+		System.out.println("Problem Occuring 2");
+		context.refresh();
+		System.out.println("Problem Occuring 3");
+		user1 = (UserDao) context.getBean("user1");
+		System.out.println("Problem Occuring");
+		cart1 = (CartItemDao) context.getBean("cart1");
+		System.out.println("Problem Occuring 4");
+		pro1 = (ProductDao) context.getBean("pro1");
+		cartdao = (CartDao)context.getBean("cartdao");
+	}
+
+//	@Test
+//	public void getcart() {
+//		System.out.println("Problem Occuring Test");
+//		User user = user1.getById(182);
+//		System.out.println(user.getUserName());
+//		Cart cart = user.getCart();
+//		
+//		System.out.println(cart.getCartId());
+//		
+//		CartItem cartItem = new CartItem();
+//		
+//		Product product = pro1.getbyId(181);
+//		
+//		cartItem.setOrderQty(2);
+//		cartItem.setTotalPrice(1200);
+//		cartItem.setProduct(product);
+//		cartItem.setCart(cart);
+//		System.out.println("problem");
+//		
+//		System.out.println(" prob 2");
+//		if (cart1.insert(cartItem)) {
+//			System.out.println("Cart Problem");
+//			cart.setTotalitem(cart.getTotalitem() + 1);
+//			System.out.println("Cart Problem 2");
+//			System.out.println(cart.getCartId());
+//			Assert.assertEquals(true, cart1.update(cartItem));
+//			System.out.println("Cart Problem 3");
+//		}
+//     }
+	
+	@Test
+	public void getcartitem(){
+	User user = user1.getById(182);
+		Cart cart = user.getCart();
+		CartItem cartitem=new CartItem();
+		boolean flag= false;
+		Product product=productdao.g
+		
+				
+	}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

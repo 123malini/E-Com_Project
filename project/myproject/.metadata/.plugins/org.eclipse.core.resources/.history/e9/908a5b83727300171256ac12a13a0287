@@ -1,0 +1,10 @@
+package com.niit.ShopWatchBackEnd.dao;
+
+import com.niit.ShopWatchBackEnd.model.Product;
+
+public interface SupplierDao {
+	boolean insertSupplier(User user); 
+	// getbyId(int id);
+	//boolean updateProduct(User,);
+	//boolean deleteProduct(User);
+}

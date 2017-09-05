@@ -1,0 +1,7 @@
+package com.niit.ShopWatchBackEnd.DBconfig;
+
+
+public class HibernateConfig {
+	
+	
+}

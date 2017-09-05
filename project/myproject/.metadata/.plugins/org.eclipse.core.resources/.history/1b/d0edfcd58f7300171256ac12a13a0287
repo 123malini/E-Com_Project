@@ -1,0 +1,5 @@
+package com.niit.ShopWatch.Controller;
+
+public class HomeController {
+
+}
