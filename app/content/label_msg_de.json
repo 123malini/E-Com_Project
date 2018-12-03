@@ -1,0 +1,15 @@
+{ 
+  
+    "pageLabel" : "Reactive Form_DE", 
+	"pageMessage" : "Form submitted successfully_DE.", 
+	"unameLabel" : "Name_DE: ",
+	"unamError1" : "User name required_DE.",
+    "unamError2" : "User name not valid_DE.", 
+    "pwdLabel" : "Password_DE: ",
+    "pwdError1" : "Password required_DE.",
+  "pwdError2" : "Password not valid_DE.",
+  "mobnumLabel" : "Cell Number_DE:",
+  "mobnumError1" : "Mobile number not valid_DE.",
+  "emailLabel" : "Email_DE:",
+  "emailError1" : "Email not valid_DE."
+}

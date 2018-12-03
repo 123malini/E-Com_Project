@@ -1,0 +1,18 @@
+{ 
+  
+    "pageLabel" : "Reactive Form", 
+	"pageMessage" : "Form submitted successfully.", 
+	"unameLabel" : "Name: ",
+	"unamError1" : "User name required 1.",
+    "unamError2" : "User name not valid.", 
+    "pwdLabel" : "Password: ",
+    "pwdError1" : "Password required.",
+  "pwdError2" : "Password not valid.",
+  "mobnumLabel" : "Cell Number:",
+  "mobnumError2" : "Mobile number is required",
+  "mobnumError1" : "Mobile number not valid.",
+  "emailLabel" : "Email:",
+  "emailError1" : "Email not valid.",
+  "emailError2" : "Email is required."
+
+}

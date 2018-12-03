@@ -1,0 +1,70 @@
+<h3>{{pageLabel}}</h3>
+<p *ngIf="isValidFormSubmitted && userForm.pristine" [ngClass] = "'success'">
+    {{ pageMessage }}
+</p>
+<form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  <table>
+		<tr> 
+			<td>{{unameLabel}} </td>
+			<td> 
+				<input formControlName="username">
+				<div *ngIf="username.errors && isValidFormSubmitted != null && !isValidFormSubmitted" [ngClass] = "'error'"> 
+					<div *ngIf="username.errors.required">
+						{{unamError1}}
+					</div>  
+					<div *ngIf="username.errors.pattern">
+						{{unamError2}}
+					</div>
+				</div>
+			</td>
+		</tr> 
+		<tr> 
+			<td>{{pwdLabel}} </td>
+			<td> 
+				<input type="password" formControlName="password">
+				<div *ngIf="password.errors && isValidFormSubmitted != null && !isValidFormSubmitted" [ngClass] = "'error'"> 
+					<div *ngIf="password.errors.required">
+						{{pwdError1}}
+					</div>  
+					<div *ngIf="password.errors.pattern">
+						{{pwdError2}}
+					</div> 
+				</div>		   
+			</td>
+		</tr> 	 
+		<tr>
+			<td>{{ mobnumLabel }}</td>
+			<td> 
+				<input formControlName="mobileNumber">
+				<div *ngIf="mobileNumber.errors && isValidFormSubmitted != null && !isValidFormSubmitted" [ngClass] = "'error'"> 
+						<div *ngIf="mobileNumber.errors.required">
+								{{mobnumError2}}
+							</div>
+					<div *ngIf="mobileNumber.errors.pattern">
+						{{mobnumError1}}
+					</div> 
+				</div>		   
+			</td>
+		</tr> 	 	 
+		<tr>
+			<td>{{emailLabel}} </td>
+			<td> 
+				<input formControlName="email">
+				<div *ngIf="email.errors && isValidFormSubmitted != null && !isValidFormSubmitted" [ngClass] = "'error'"> 
+
+						<div *ngIf="email.errors.required">
+								{{emailError2}}
+							</div> 
+					<div *ngIf="email.errors.pattern">
+						{{emailError1}}
+					</div> 
+				</div>		   
+			</td>
+		</tr>
+		<tr> 	  
+			<td colspan="2">
+				<button>Submit</button>
+			</td>
+		</tr>	   
+  </table>  
+</form>
